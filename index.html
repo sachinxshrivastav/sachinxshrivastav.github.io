@@ -11,16 +11,16 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗺️</text></svg>">
 <style>
   :root{
-    --bg:#0a0e14;
-    --bg-elev:#10151f;
-    --bg-elev-2:#161d2b;
-    --border:#232b3a;
-    --text:#e8ecf4;
-    --text-dim:#9aa5b8;
-    --text-faint:#5f6b80;
-    --accent:#4fd1c5;
-    --accent-2:#7c9eff;
-    --accent-soft:rgba(79,209,197,0.12);
+    --bg:#f6f7fb;
+    --bg-elev:#ffffff;
+    --bg-elev-2:#eef1f7;
+    --border:#e3e7ef;
+    --text:#182033;
+    --text-dim:#515d75;
+    --text-faint:#8690a3;
+    --accent:#0f766e;
+    --accent-2:#4338ca;
+    --accent-soft:rgba(15,118,110,0.09);
     --mono: 'JetBrains Mono', monospace;
     --sans: 'Inter', sans-serif;
     --display: 'Space Grotesk', sans-serif;
@@ -42,8 +42,8 @@
     position:fixed;
     inset:0;
     background:
-      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(79,209,197,0.08), transparent),
-      radial-gradient(ellipse 60% 40% at 90% 10%, rgba(124,158,255,0.06), transparent);
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(15,118,110,0.07), transparent),
+      radial-gradient(ellipse 60% 40% at 90% 10%, rgba(67,56,202,0.05), transparent);
     pointer-events:none;
     z-index:0;
   }
@@ -57,7 +57,7 @@
   nav{
     position:sticky; top:0; z-index:50;
     backdrop-filter:blur(12px);
-    background:rgba(10,14,20,0.75);
+    background:rgba(246,247,251,0.8);
     border-bottom:1px solid var(--border);
   }
   nav .wrap{display:flex; align-items:center; justify-content:space-between; height:64px; max-width:var(--maxw);}
@@ -82,7 +82,7 @@
   .eyebrow{
     display:inline-flex; align-items:center; gap:8px;
     font-family:var(--mono); font-size:13px; color:var(--accent);
-    background:var(--accent-soft); border:1px solid rgba(79,209,197,0.25);
+    background:var(--accent-soft); border:1px solid rgba(15,118,110,0.22);
     padding:6px 12px; border-radius:20px; margin-bottom:24px;
   }
   .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--accent); box-shadow:0 0 8px var(--accent);}
@@ -103,8 +103,8 @@
     padding:11px 20px; border-radius:8px; font-size:14px; font-weight:600;
     text-decoration:none; font-family:var(--sans); transition:all .15s; cursor:pointer; border:1px solid transparent;
   }
-  .btn-primary{background:var(--accent); color:#06231f;}
-  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 8px 20px -8px rgba(79,209,197,0.5);}
+  .btn-primary{background:var(--accent); color:#ffffff;}
+  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 8px 20px -8px rgba(15,118,110,0.45);}
   .btn-ghost{border:1px solid var(--border); color:var(--text);}
   .btn-ghost:hover{border-color:var(--accent); color:var(--accent);}
 
@@ -121,7 +121,7 @@
     background:var(--bg-elev); border:1px solid var(--border); border-radius:10px;
     padding:18px; transition:border-color .15s, transform .15s;
   }
-  .skill-card:hover{border-color:rgba(79,209,197,0.4); transform:translateY(-2px);}
+  .skill-card:hover{border-color:rgba(15,118,110,0.35); transform:translateY(-2px);}
   .skill-card h3{margin:0 0 6px; font-size:14px; font-family:var(--mono); color:var(--accent-2); font-weight:500;}
   .skill-card p{margin:0; font-size:13px; color:var(--text-faint); line-height:1.5;}
 
@@ -220,6 +220,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
     </ul>
     <a class="nav-cta" href="#contact">Contact</a>
   </div>
@@ -393,14 +394,6 @@
       </div>
 
     </div>
-
-    <div class="also-card" style="margin-top:40px;">
-      <div class="emoji">📷</div>
-      <div>
-        <h3>Sachin Shrivastav Photography — Freelance Photographer</h3>
-        <p>May 2015 — Present, London. "A picture says thousands of stories" — shooting alongside a GIS career, bringing the same eye for detail to every frame.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -439,6 +432,23 @@
         <h3>Birla Institute of Technology and Science, Pilani</h3>
         <div class="deg">Post Graduate Certificate Programme in AI &amp; ML — Work Integrated Learning</div>
         <div class="yr">December 2020 — November 2021</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hobbies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Hobbies</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="also-card">
+      <div class="emoji">📷</div>
+      <div>
+        <h3>Sachin Shrivastav Photography — Freelance Photographer</h3>
+        <p>May 2015 — Present, London. "A picture says thousands of stories" — shooting alongside a GIS career, bringing the same eye for detail to every frame.</p>
       </div>
     </div>
   </div>
